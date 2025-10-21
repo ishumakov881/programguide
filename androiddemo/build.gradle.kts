@@ -51,4 +51,7 @@ dependencies {
 	implementation(libs.compose.uitoolingpreview)
 	implementation(libs.androidx.activitycompose)
 	implementation(libs.androidx.splashscreen)
+
+	implementation(libs.androidx.tv.foundation)
+	implementation(libs.androidx.tv.material)
 }

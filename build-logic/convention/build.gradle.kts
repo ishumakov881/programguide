@@ -4,7 +4,7 @@ plugins {
 
 java {
     toolchain {
-        val version = libs.versions.java.toolchain.get()
+        val version = 17//libs.versions.java.toolchain.get()
         languageVersion.set(JavaLanguageVersion.of(version))
     }
 }
