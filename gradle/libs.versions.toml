@@ -12,16 +12,19 @@ compose-multiplatform = "1.9.1"
 activity-compose = "1.11.0"
 core-splashscreen = "1.0.1"
 
-agp = "8.8.2"
+agp = "8.9.1"
 plugin-kotlin = "2.1.21"
 plugin-detekt = "1.23.8"
 plugin-spotless = "8.0.0"
 plugin-mavenpublish = "0.34.0"
-androidx-tv = "1.0.0-alpha12" # New entry
+
+tvFoundation = "1.0.0-alpha12"
+tvMaterial = "1.1.0-alpha01"
+
 materialIconsExtended = "1.7.8"
 [libraries]
-androidx-tv-foundation = { module = "androidx.tv:tv-foundation", version.ref = "androidx-tv" } # New entry
-androidx-tv-material = { module = "androidx.tv:tv-material", version.ref = "androidx-tv" } # New entry
+androidx-tv-foundation = { module = "androidx.tv:tv-foundation", version.ref = "tvFoundation" } # New entry
+androidx-tv-material = { module = "androidx.tv:tv-material", version.ref = "tvMaterial" }
 
 minabox = { module = "io.github.oleksandrbalan:minabox", version.ref = "minabox" }
 compose-bom = { module = "androidx.compose:compose-bom", version.ref = "compose-bom" }
