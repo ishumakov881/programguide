@@ -11,10 +11,14 @@ import eu.wewox.programguide.ProgramGuide
 import eu.wewox.programguide.ProgramGuideItem
 import eu.wewox.programguide.demo.data.createPrograms
 import eu.wewox.programguide.demo.ui.components.ChannelCellTv
+import eu.wewox.programguide.demo.ui.components.CurrentTimeIndicator
 import eu.wewox.programguide.demo.ui.components.ProgramCellTv
 import eu.wewox.programguide.demo.ui.components.TimelineItemCellTv
 import eu.wewox.programguide.rememberSaveableProgramGuideState
 import kotlinx.coroutines.launch
+import kotlinx.datetime.Clock
+import kotlinx.datetime.TimeZone
+import kotlinx.datetime.toLocalDateTime
 
 /**
  * Showcases the most simple usage of program guide for Android TV.
@@ -109,6 +113,15 @@ fun ProgramGuideSimpleScreenTv() { // Removed onBackClick
                         }
                     )
                 },
+            )
+
+            currentTime(
+                layoutInfo = {
+                    val now = Clock.System.now().toLocalDateTime(TimeZone.currentSystemDefault())
+                    val currentHour = now.hour + now.minute / 60f
+                    ProgramGuideItem.CurrentTime(hour = currentHour)
+                },
+                itemContent = { CurrentTimeIndicator() }
             )
         }
     }

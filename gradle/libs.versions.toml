@@ -22,6 +22,7 @@ tvFoundation = "1.0.0-alpha12"
 tvMaterial = "1.1.0-alpha01"
 
 materialIconsExtended = "1.7.8"
+kotlinx-datetime = "0.6.0"
 [libraries]
 androidx-tv-foundation = { module = "androidx.tv:tv-foundation", version.ref = "tvFoundation" } # New entry
 androidx-tv-material = { module = "androidx.tv:tv-material", version.ref = "tvMaterial" }
@@ -36,6 +37,7 @@ androidx-activitycompose = { module = "androidx.activity:activity-compose", vers
 androidx-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "core-splashscreen" }
 programguide = { module = "io.github.oleksandrbalan:programguide", version.ref = "programguide" }
 material-icons-extended = { module = "androidx.compose.material:material-icons-extended", version.ref = "materialIconsExtended" }
+kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinx-datetime" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

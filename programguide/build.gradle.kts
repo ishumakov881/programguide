@@ -28,13 +28,13 @@ kotlin {
 
 	sourceSets {
 		val commonMain by getting {
-			dependencies {
-				api(compose.runtime)
-				api(compose.foundation)
-
-				api(libs.minabox)
-			}
-		}
+			            dependencies {
+							api(compose.runtime)
+							api(compose.foundation)
+			
+							api(libs.minabox)
+							implementation(libs.kotlinx.datetime)
+						}		}
 	}
 }
 

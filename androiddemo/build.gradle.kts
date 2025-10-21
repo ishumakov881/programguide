@@ -47,7 +47,7 @@ dependencies {
 	//implementation(project(":programguide"))
 	implementation(libs.programguide)
 	implementation(project(":demo"))
-
+	implementation(libs.kotlinx.datetime)
 	implementation(platform(libs.compose.bom))
 	implementation(libs.compose.material3)
 	implementation(libs.compose.ui)
