@@ -36,7 +36,9 @@ fun ProgramGuideSimpleScreenTv() { // Removed onBackClick
                         endHour = it.end,
                     )
                 },
-                itemContent = { ProgramCellTv(it) },
+                itemContent = { ProgramCellTv(it, onClick = {
+
+                }) },
             )
 
             channels(

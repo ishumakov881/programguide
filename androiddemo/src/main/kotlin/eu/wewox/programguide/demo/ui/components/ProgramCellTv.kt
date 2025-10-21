@@ -27,8 +27,8 @@ import eu.wewox.programguide.demo.data.formatTime
 fun ProgramCellTv(program: Program, modifier: Modifier = Modifier, onClick: (() -> Unit)? = null) {
     Surface(
         colors = ClickableSurfaceDefaults.colors(
-            containerColor = Color(0xFF1a237e), // programguide_default_schedule_color
-            focusedContainerColor = Color(0xFF1565c0) // programguide_selected_schedule_color
+            containerColor = MaterialTheme.colorScheme.secondary, // Use theme secondary color
+            focusedContainerColor = MaterialTheme.colorScheme.primary // Use theme primary color for focus
         ),
         border = ClickableSurfaceDefaults.border(
             border = Border(BorderStroke(1.dp, MaterialTheme.colorScheme.surface)),
