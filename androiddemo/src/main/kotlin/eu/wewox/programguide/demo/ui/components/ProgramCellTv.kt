@@ -31,12 +31,12 @@ fun ProgramCellTv(program: Program, modifier: Modifier = Modifier, onClick: (() 
             focusedContainerColor = MaterialTheme.colorScheme.secondary // Highlight on focus
         ),
         border = androidx.tv.material3.ClickableSurfaceDefaults.border(
-            BorderStroke(1.dp, MaterialTheme.colorScheme.surface),
-            focusedBorder = BorderStroke(2.dp, Color.White) // White border on focus
+            border = Border(BorderStroke(1.dp, MaterialTheme.colorScheme.surface)),
+            focusedBorder = Border(BorderStroke(2.dp, Color.White)) // White border on focus
         ),
         onClick = onClick ?: { },
         enabled = onClick != null,
-        modifier = modifier.focusable(), // Make it focusable
+        modifier = modifier,
     ) {
         Column(modifier = Modifier.padding(4.dp)) {
             Text(

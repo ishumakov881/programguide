@@ -34,7 +34,7 @@ fun ChannelCellTv(index: Int, modifier: Modifier = Modifier, onClick: (() -> Uni
         ),
         onClick = onClick ?: { },
         enabled = onClick != null,
-        modifier = modifier.focusable(), // Make it focusable
+        modifier = modifier,
     ) {
         Box(contentAlignment = Alignment.Center) {
             Text(
