@@ -40,8 +40,8 @@ fun ProgramCellTv(program: Program, modifier: Modifier = Modifier, onClick: (() 
 
     Surface(
         colors = ClickableSurfaceDefaults.colors(
-            containerColor = Color.Black.copy(alpha = 0.7f),
-            focusedContainerColor = Color.Black.copy(alpha = 0.7f), // Highlight on focus
+            containerColor = Color(0xFF1a237e), // programguide_default_schedule_color
+           focusedContainerColor = Color(0xFF1565c0) // programguide_selected_schedule_color
         ),
 //        border = androidx.tv.material3.ClickableSurfaceDefaults.border(
 //            border = Border(BorderStroke(1.dp, MaterialTheme.colorScheme.surface)),
