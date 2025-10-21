@@ -108,3 +108,9 @@ Fully configurable layout.
 https://github.com/oleksandrbalan/programguide/assets/20944869/9ce2ecc6-7b80-470b-9254-77dcd5e670c1
 
 If you need further customization options, check [MinaBox](https://github.com/oleksandrbalan/minabox) library.
+
+## Fork Information
+
+This project is a fork of the original [Program Guide](https://github.com/oleksandrbalan/programguide) library.
+
+We have extended its functionality to specifically support Jetpack Compose TV, including enhanced D-Pad scroll navigation and other TV-specific optimizations.
