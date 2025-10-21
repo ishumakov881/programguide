@@ -23,7 +23,9 @@ dependencyResolutionManagement {
 
 rootProject.name = "ProgramGuide"
 include(":demo")
-include(":programguide")
+
+//include(":programguide")
+
 include(":desktopdemo")
 include(":androiddemo")
 include(":wasmdemo")

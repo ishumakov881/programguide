@@ -44,7 +44,8 @@ android {
 }
 
 dependencies {
-	implementation(project(":programguide"))
+	//implementation(project(":programguide"))
+	implementation(libs.programguide)
 	implementation(project(":demo"))
 
 	implementation(platform(libs.compose.bom))
@@ -57,4 +58,5 @@ dependencies {
 
 	implementation(libs.androidx.tv.foundation)
 	implementation(libs.androidx.tv.material)
+	implementation(libs.material.icons.extended)
 }

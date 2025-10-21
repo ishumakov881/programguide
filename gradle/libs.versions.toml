@@ -1,4 +1,5 @@
 [versions]
+programguide = "1.6.0"
 sdk-compile = "36"
 sdk-min = "21"
 sdk-target = "35"
@@ -12,12 +13,12 @@ activity-compose = "1.11.0"
 core-splashscreen = "1.0.1"
 
 agp = "8.8.2"
-plugin-kotlin = "2.1.10"
+plugin-kotlin = "2.1.21"
 plugin-detekt = "1.23.8"
 plugin-spotless = "8.0.0"
 plugin-mavenpublish = "0.34.0"
-androidx-tv = "1.0.1" # New entry
-
+androidx-tv = "1.0.0-alpha12" # New entry
+materialIconsExtended = "1.7.8"
 [libraries]
 androidx-tv-foundation = { module = "androidx.tv:tv-foundation", version.ref = "androidx-tv" } # New entry
 androidx-tv-material = { module = "androidx.tv:tv-material", version.ref = "androidx-tv" } # New entry
@@ -30,6 +31,8 @@ compose-uitooling = { module = "androidx.compose.ui:ui-tooling" }
 compose-uitoolingpreview = { module = "androidx.compose.ui:ui-tooling-preview" }
 androidx-activitycompose = { module = "androidx.activity:activity-compose", version.ref = "activity-compose" }
 androidx-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "core-splashscreen" }
+programguide = { module = "io.github.oleksandrbalan:programguide", version.ref = "programguide" }
+material-icons-extended = { module = "androidx.compose.material:material-icons-extended", version.ref = "materialIconsExtended" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
