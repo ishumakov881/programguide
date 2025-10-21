@@ -48,7 +48,9 @@ fun ProgramGuideSimpleScreenTv() { // Removed onBackClick
                         index = it
                     )
                 },
-                itemContent = { ChannelCellTv(it) },
+                itemContent = { ChannelCellTv(it, onClick = {
+
+                }) },
             )
 
             timeline(
