@@ -12,7 +12,8 @@ plugins {
     alias(libs.plugins.compose.compiler) apply false
     alias(libs.plugins.detekt)
     alias(libs.plugins.spotless)
-    alias(libs.plugins.mavenpublish)
+
+
 }
 
 configure(subprojects) {

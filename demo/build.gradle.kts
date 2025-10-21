@@ -6,7 +6,10 @@ plugins {
 	alias(libs.plugins.jetbrains.compose)
 	alias(libs.plugins.android.library)
 	alias(libs.plugins.compose.compiler)
-	id("convention.jvm.toolchain")
+}
+
+kotlin {
+    jvmToolchain(17)
 }
 
 kotlin {

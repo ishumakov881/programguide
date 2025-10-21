@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ProgramGuide</string>
+    <string name="app_name_tv">ProgramGuide TV</string>
 </resources>
