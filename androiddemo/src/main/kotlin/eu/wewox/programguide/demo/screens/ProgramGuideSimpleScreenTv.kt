@@ -96,7 +96,19 @@ fun ProgramGuideSimpleScreenTv() { // Removed onBackClick
                         endHour = start + 1f
                     )
                 },
-                itemContent = { TimelineItemCellTv(timeline.toList()[it].toFloat()) },
+                itemContent = { index ->
+                    val scope = rememberCoroutineScope()
+                    TimelineItemCellTv(
+                        timeline.toList()[index].toFloat(),
+                        modifier = Modifier.onFocusChanged { focusState ->
+                            if (focusState.isFocused) {
+                                scope.launch {
+                                    programGuideState.animateToTimeline(index)
+                                }
+                            }
+                        }
+                    )
+                },
             )
         }
     }
